@@ -218,7 +218,7 @@ button { font: inherit; color: inherit; }
   justify-self: end;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: 72% 18%;
+  object-position: center 22%;
   border: 1px solid rgba(147, 197, 253, 0.4);
 }
 
