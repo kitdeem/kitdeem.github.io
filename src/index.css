@@ -74,7 +74,7 @@ button { font: inherit; color: inherit; }
   position: relative;
   border: 0;
   background: transparent;
-  color: var(--muted-light);
+  color: var(--cream);
   cursor: pointer;
   padding: 0.32rem 0.72rem;
   font-size: 0.75rem;
@@ -83,7 +83,7 @@ button { font: inherit; color: inherit; }
 
 .lang button[aria-pressed="true"] { color: var(--night); }
 
-.lang-pill {
+.lang button .lang-pill {
   position: absolute;
   inset: 0;
   background: var(--sky);
@@ -91,13 +91,14 @@ button { font: inherit; color: inherit; }
   z-index: 0;
 }
 
-.lang button span { position: relative; z-index: 1; }
+.lang button > span:last-child { position: relative; z-index: 1; }
 
-.write { position: relative; }
+.write { position: relative; z-index: 2; }
 
 .write-menu {
   position: absolute;
-  top: calc(100% + 0.7rem);
+  z-index: 30;
+  top: calc(100% + 0.55rem);
   left: 50%;
   transform: translateX(-50%);
   right: auto;
@@ -105,6 +106,11 @@ button { font: inherit; color: inherit; }
   flex-direction: column;
   gap: 0.4rem;
   min-width: 11.5rem;
+  padding: 0.45rem;
+  background: var(--night);
+  border: 1px solid rgba(147, 197, 253, 0.45);
+  border-radius: 1.15rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 .write-menu a {

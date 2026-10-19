@@ -281,7 +281,7 @@ const copy = {
     title: 'Дмитрий Волокитин, системный архитектор',
   },
   en: {
-    write: 'Write',
+    write: 'Contact',
     mail: 'Email',
     langLabel: 'Language',
     ghost: 'GRAPH',
