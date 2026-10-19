@@ -76,7 +76,7 @@ const copy = {
     aboutPoints: [
       'Сейчас: дорожная карта OSA, вывод на рынок, кейсы для инфраструктуры и энергетики. Параллельно технический директор Ecoport / Rusecolog.',
       'До этого: ядро онтологии, фронтенд, дизайн сайтов компании, преподавание MBSE и онтологического моделирования.',
-      'Обучил больше 100 человек, среди них студенты старших курсов МГУ.',
+      'Обучил больше 100 человек, среди них студенты старших курсов ведущих вузов РФ.',
       'Нейросети использую на высоком уровне и подключаю их к контуру компании: онтология, API, политики, проверка ответа.',
     ],
     workKicker: 'Работа',
@@ -119,7 +119,7 @@ const copy = {
         points: [
           'Ведущий системный и knowledge-инженер OSA: ядро онтологии и сервисная архитектура для интеграции данных крупных заказчиков.',
           'С нуля собрал MVP графа знаний «Атлас образования» для методологов.',
-          'Преподаю MBSE и онтологическое моделирование разным организациям. Обучил больше 100 человек, в том числе студентов старших курсов МГУ.',
+          'Преподаю MBSE и онтологическое моделирование разным организациям. Обучил больше 100 человек, в том числе студентов старших курсов ведущих вузов РФ.',
           'Собрал и вывел корпоративный сайт tas-project.ru на React, Strapi и Node.js. Дизайн сайта тоже мой. Strapi поднял и поддерживал.',
           'Поднял CI/CD на GitLab CI и приватных раннерах.',
         ],
@@ -157,14 +157,14 @@ const copy = {
         id: 'msu',
         index: '03',
         kicker: '2025-2026',
-        title: 'Образовательные продукты с ВМК МГУ',
+        title: 'Образовательные продукты с вузами',
         summary: 'Совместные программы MBSE, программной и онтологической инженерии на OSA.',
         body: [
-          'Вместе с факультетом ВМК МГУ, научный руководитель магистерских программ профессор В. А. Сухомлин, подготовили программы цифровых навыков по модельно-ориентированной системной, программной и онтологической инженерии.',
-          'Три продукта на OSA: методические основы MBSE, методические основы программной инженерии по SWEBOK V4, менеджмент риска кибербезопасности. В учебном году 2025/2026 программу прошли 40 студентов магистратуры. Я вёл занятия у студентов старших курсов.',
+          'Вместе с ведущими вузами РФ подготовили программы цифровых навыков по модельно-ориентированной системной, программной и онтологической инженерии.',
+          'Три продукта на OSA: методические основы MBSE, методические основы программной инженерии по SWEBOK V4, менеджмент риска кибербезопасности. В учебном году 2025/2026 вёл занятия у студентов старших курсов.',
           'Публикация: https://tas-project.ru/publications/tas-msu',
         ],
-        chips: ['MBSE', 'OSA', 'онтологии', 'ВМК МГУ'],
+        chips: ['MBSE', 'OSA', 'онтологии', 'вузы РФ'],
       },
       {
         id: 'claims',
@@ -355,7 +355,7 @@ const copy = {
     aboutPoints: [
       'Now: the OSA roadmap, go-to-market, and cases for infrastructure and energy. In parallel, technical director at Ecoport / Rusecolog.',
       'Before that: the ontology core, frontend, site design, and teaching MBSE and ontology modeling.',
-      'I have taught more than 100 people, including senior students at Moscow State University.',
+      'I have taught more than 100 people, including senior students at leading Russian universities.',
       'I use neural models at a high level and connect them to a company loop: ontology, APIs, policies, and a check of the answer.',
     ],
     workKicker: 'Work',
@@ -398,7 +398,7 @@ const copy = {
         points: [
           'Lead systems and knowledge engineer for OSA: the ontology core and the service architecture used to integrate data for large clients.',
           'Built the Education Atlas knowledge-graph MVP from scratch for instructional designers.',
-          'I teach MBSE and ontology modeling for different organizations. More than 100 people, including senior students at Moscow State University.',
+          'I teach MBSE and ontology modeling for different organizations. More than 100 people, including senior students at leading Russian universities.',
           'Shipped the company site tas-project.ru on React, Strapi, and Node.js. I designed it, and I set up and maintained Strapi.',
           'Set up CI/CD on GitLab CI with private runners.',
         ],
@@ -436,14 +436,14 @@ const copy = {
         id: 'msu',
         index: '03',
         kicker: '2025-2026',
-        title: 'Educational products with CMC MSU',
+        title: 'Educational products with universities',
         summary: 'Joint programs in MBSE, software engineering, and ontology engineering on OSA.',
         body: [
-          'With the Faculty of Computational Mathematics and Cybernetics at Moscow State University, whose master programs are led by Professor V. A. Sukhomlin, we prepared digital-skill programs in model-based systems, software, and ontology engineering.',
-          'Three products on OSA: methodological foundations of MBSE, methodological foundations of software engineering from SWEBOK V4, and cybersecurity risk management. In the 2025/2026 academic year, 40 master students went through the program. I taught the senior students.',
+          'With leading Russian universities we prepared digital-skill programs in model-based systems, software, and ontology engineering.',
+          'Three products on OSA: methodological foundations of MBSE, methodological foundations of software engineering from SWEBOK V4, and cybersecurity risk management. In the 2025/2026 academic year I taught senior students.',
           'Publication: https://tas-project.ru/publications/tas-msu',
         ],
-        chips: ['MBSE', 'OSA', 'ontologies', 'CMC MSU'],
+        chips: ['MBSE', 'OSA', 'ontologies', 'Russian universities'],
       },
       {
         id: 'claims',
