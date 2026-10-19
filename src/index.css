@@ -386,6 +386,12 @@ h2.display {
 }
 .tiles-stack { grid-template-columns: 1fr; }
 .tiles-compact { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tiles-compact .tile-copy { container-type: inline-size; }
+.tiles-compact .tile-copy b {
+  font-size: min(1.45rem, 7.3cqi);
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
 
 .tile {
   min-width: 0;
