@@ -966,19 +966,47 @@ function Page({ text, lang }) {
   )
 }
 
+function pathLang() {
+  const path = window.location.pathname.replace(/\/+$/, '')
+  if (path === '/en') return 'en'
+  if (path === '/ru') return 'ru'
+  return null
+}
+
 export default function App() {
   const reduce = useReducedMotion()
   const opened = useRef(false)
-  const [lang, setLang] = useState(() => {
+  const [lang, setLangState] = useState(() => {
     if (typeof window === 'undefined') return 'ru'
-    return window.localStorage.getItem('resume-lang') === 'en' ? 'en' : 'ru'
+    return pathLang() || (window.localStorage.getItem('resume-lang') === 'en' ? 'en' : 'ru')
   })
   const text = copy[lang]
+
+  const setLang = (next) => {
+    setLangState(next)
+    const url = `/${next}`
+    if (window.location.pathname.replace(/\/+$/, '') !== url) {
+      window.history.pushState(null, '', url)
+    }
+  }
+
+  useEffect(() => {
+    const onPop = () => {
+      const next = pathLang()
+      if (next) setLangState(next)
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
 
   useEffect(() => {
     document.documentElement.lang = lang
     document.title = text.title
     window.localStorage.setItem('resume-lang', lang)
+    const url = `/${lang}`
+    if (window.location.pathname.replace(/\/+$/, '') !== url) {
+      window.history.replaceState(null, '', url)
+    }
   }, [lang, text.title])
 
   useEffect(() => {
