@@ -216,10 +216,12 @@ button { font: inherit; color: inherit; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(180deg, rgba(244, 241, 234, 0.07), rgba(147, 197, 253, 0.03));
+  background:
+    linear-gradient(180deg, rgba(244, 241, 234, 0.1), rgba(147, 197, 253, 0.05)),
+    rgba(11, 13, 16, 0.34);
   pointer-events: none;
-  backdrop-filter: blur(20px) saturate(1.15);
-  -webkit-backdrop-filter: blur(20px) saturate(1.15);
+  backdrop-filter: blur(26px) saturate(1.2);
+  -webkit-backdrop-filter: blur(26px) saturate(1.2);
   mask-image:
     linear-gradient(to right, transparent, #000 11%, #000 89%, transparent),
     linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);
