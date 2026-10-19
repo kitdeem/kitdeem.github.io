@@ -16,6 +16,7 @@ const nodes = [
   { id: 'pg', ru: 'PostgreSQL', en: 'PostgreSQL', x: 58, y: 72 },
   { id: 'docker', ru: 'Docker', en: 'Docker', x: 80, y: 78 },
   { id: 'ci', ru: 'GitLab CI', en: 'GitLab CI', x: 90, y: 56 },
+  { id: 'nn', ru: 'Нейросети', en: 'Neural models', x: 80, y: 34 },
 ]
 
 const threads = [
@@ -44,6 +45,10 @@ const threads = [
   ['pg', 'docker'],
   ['docker', 'ci'],
   ['ui', 'product'],
+  ['nn', 'owl'],
+  ['nn', 'kg'],
+  ['nn', 'py'],
+  ['nn', 'product'],
 ]
 
 const copy = {
@@ -72,6 +77,7 @@ const copy = {
       'Сейчас: дорожная карта OSA, вывод на рынок, кейсы для инфраструктуры и энергетики. Параллельно технический директор Ecoport / Rusecolog.',
       'До этого: ядро онтологии, фронтенд, дизайн сайтов компании, преподавание MBSE и онтологического моделирования.',
       'Обучил больше 100 человек, среди них студенты старших курсов МГУ.',
+      'Нейросети использую на высоком уровне и подключаю их к контуру компании: онтология, API, политики, проверка ответа.',
     ],
     workKicker: 'Работа',
     workTitle: 'Опыт',
@@ -305,6 +311,13 @@ const copy = {
         summary: 'R&D в B2B.',
         body: 'Вывод R&D в B2B: профиль клиента, путь заказчика, дорожная карта, технические кейсы для продаж.',
       },
+      {
+        id: 'nn',
+        index: '08',
+        title: 'Нейросети',
+        summary: 'Модели и подключение к компании.',
+        body: 'Высокий уровень работы с нейросетями разных семейств: постановка задачи, сборка контекста, цепочка из нескольких моделей, проверка ответа. Подключаю их к компании через онтологию и граф знаний, API, политики и рабочие процессы. Модель читает сущности и допустимые действия предприятия и возвращает результат в тот же контур.',
+      },
     ],
     eduKicker: 'Образование',
     eduTitle: 'МИСИС',
@@ -344,6 +357,7 @@ const copy = {
       'Now: the OSA roadmap, go-to-market, and cases for infrastructure and energy. In parallel, technical director at Ecoport / Rusecolog.',
       'Before that: the ontology core, frontend, site design, and teaching MBSE and ontology modeling.',
       'I have taught more than 100 people, including senior students at Moscow State University.',
+      'I use neural models at a high level and connect them to a company loop: ontology, APIs, policies, and a check of the answer.',
     ],
     workKicker: 'Work',
     workTitle: 'Experience',
@@ -576,6 +590,13 @@ const copy = {
         title: 'Product',
         summary: 'R&D into B2B.',
         body: 'Taking R&D into B2B: client profile, customer journey, roadmap, and technical cases for sales.',
+      },
+      {
+        id: 'nn',
+        index: '08',
+        title: 'Neural models',
+        summary: 'Models and how they join a company.',
+        body: 'A high level of work with neural models across families: setting the task, assembling context, a chain of several models, and checking the answer. I connect them to a company through the ontology and knowledge graph, APIs, policies, and workflows. The model reads the enterprise entities and allowed actions and returns the result into the same loop.',
       },
     ],
     eduKicker: 'Education',
