@@ -199,6 +199,16 @@ button { font: inherit; color: inherit; }
   margin: 0 0 1.5rem;
   color: var(--cream);
 }
+.eyebrow-plate {
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.85rem 1.05rem 0.95rem;
+  background: rgba(11, 13, 16, 0.78);
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  border-radius: 1.05rem;
+  backdrop-filter: blur(10px);
+}
 .eyebrow b {
   display: block;
   max-width: 6.5em;
@@ -696,6 +706,13 @@ h2.display {
     padding-top: 0.45rem;
     font-size: 0.72rem;
     letter-spacing: 0.08em;
+  }
+  .eyebrow-plate {
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    backdrop-filter: none;
   }
   .hero-grid { grid-template-columns: 1fr; gap: 1.15rem; }
   .hero h1 { font-size: 2.45rem; }

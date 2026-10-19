@@ -804,8 +804,10 @@ function Page({ text, lang }) {
             ))}
           </p>
           <p className="eyebrow">
-            <b>{text.eyebrow}</b>
-            <span>{text.eyebrowSub}</span>
+            <span className="eyebrow-plate">
+              <b>{text.eyebrow}</b>
+              <span>{text.eyebrowSub}</span>
+            </span>
           </p>
           <div className="hero-grid">
             <div>
