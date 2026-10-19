@@ -804,7 +804,7 @@ function Page({ text, lang }) {
             ))}
           </p>
           <p className="eyebrow">
-            {text.eyebrow}
+            <b>{text.eyebrow}</b>
             <span>{text.eyebrowSub}</span>
           </p>
           <div className="hero-grid">
@@ -966,6 +966,7 @@ function Page({ text, lang }) {
 
 export default function App() {
   const reduce = useReducedMotion()
+  const opened = useRef(false)
   const [lang, setLang] = useState(() => {
     if (typeof window === 'undefined') return 'ru'
     return window.localStorage.getItem('resume-lang') === 'en' ? 'en' : 'ru'
@@ -977,6 +978,12 @@ export default function App() {
     document.title = text.title
     window.localStorage.setItem('resume-lang', lang)
   }, [lang, text.title])
+
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual'
+    window.scrollTo(0, 0)
+    opened.current = true
+  }, [])
 
   return (
     <>
@@ -1002,7 +1009,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         <motion.div
           key={lang}
-          initial={reduce ? false : { opacity: 0, y: 28 }}
+          initial={reduce || !opened.current ? false : { opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: reduce ? 0 : 0.42, ease: [0.22, 1, 0.36, 1] }}
