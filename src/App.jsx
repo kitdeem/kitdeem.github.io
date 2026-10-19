@@ -632,7 +632,6 @@ function PopLetter({ delay = 0, children }) {
 }
 
 function Tile({ item, open, onToggle, children }) {
-  const reduce = useReducedMotion()
   return (
     <article className={`tile${open ? ' is-open' : ''}`}>
       <h3>
@@ -647,20 +646,11 @@ function Tile({ item, open, onToggle, children }) {
           <span className={`tile-mark${open ? ' is-open' : ''}`} aria-hidden="true" />
         </button>
       </h3>
-      <AnimatePresence initial={false}>
-        {open ? (
-          <motion.div
-            className="tile-panel"
-            key="panel"
-            initial={reduce ? false : { height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={reduce ? undefined : { height: 0, opacity: 0 }}
-            transition={{ duration: reduce ? 0 : 0.35, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="tile-panel-inner">{children}</div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+      <div className="tile-panel" inert={open ? undefined : true} aria-hidden={!open}>
+        <div className="tile-panel-clip">
+          <div className="tile-panel-inner">{children}</div>
+        </div>
+      </div>
     </article>
   )
 }

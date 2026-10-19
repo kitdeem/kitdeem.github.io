@@ -464,10 +464,19 @@ h2.display {
 .tile-mark::after { width: 1.5px; height: 0.75rem; transition: transform 0.25s ease; }
 .tile-mark.is-open::after { transform: translate(-50%, -50%) scaleY(0); }
 
-.tile-panel { overflow: hidden; }
+.tile-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tile.is-open .tile-panel { grid-template-rows: 1fr; }
+.tile-panel-clip { overflow: hidden; min-height: 0; }
 .tile-panel-inner {
   padding: 0 1.15rem 1.2rem 4.4rem;
   border-top: 1px solid var(--line);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tile-panel { transition: none; }
 }
 .board-night .tile-panel-inner { border-top-color: var(--line-light); }
 .tile-panel-inner p { margin: 0.85rem 0 0; max-width: 68ch; }
