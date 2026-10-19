@@ -195,23 +195,24 @@ button { font: inherit; color: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: min(48%, 34rem);
+  width: auto;
+  max-width: none;
   margin: 0 0 1.5rem;
   color: var(--cream);
 }
 .eyebrow-plate {
   align-self: flex-start;
-  width: fit-content;
-  max-width: 100%;
-  padding: 0.85rem 1.05rem 0.95rem;
-  background: rgba(11, 13, 16, 0.78);
-  border: 1px solid rgba(147, 197, 253, 0.35);
+  width: max-content;
+  max-width: none;
+  padding: 0.95rem 1.55rem 1.05rem;
+  background: rgba(11, 13, 16, 0.16);
+  border: 1px solid rgba(147, 197, 253, 0.22);
   border-radius: 1.05rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(18px);
 }
 .eyebrow b {
   display: block;
-  max-width: 6.5em;
+  width: min-content;
   font-family: var(--display);
   font-weight: 800;
   font-size: clamp(2.6rem, 4.8vw, 4.5rem);
@@ -219,9 +220,9 @@ button { font: inherit; color: inherit; }
   letter-spacing: -0.055em;
   text-transform: uppercase;
 }
-.eyebrow span {
+.eyebrow-plate > span {
   display: block;
-  max-width: 24em;
+  max-width: none;
   margin-top: 0.9rem;
   padding-top: 0.7rem;
   border-top: 1px solid rgba(147, 197, 253, 0.55);
@@ -700,7 +701,7 @@ h2.display {
     font-size: 1.7rem;
     line-height: 0.95;
   }
-  .eyebrow span {
+  .eyebrow-plate > span {
     max-width: none;
     margin-top: 0.55rem;
     padding-top: 0.45rem;
