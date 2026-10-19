@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 
 const nodes = [
@@ -574,18 +574,26 @@ function Tile({ item, open, onToggle, children }) {
 
 function WriteMenu({ label, mail }) {
   const [open, setOpen] = useState(false)
+  const rootRef = useRef(null)
 
   useEffect(() => {
     if (!open) return undefined
     const onKey = (event) => {
       if (event.key === 'Escape') setOpen(false)
     }
+    const onPointer = (event) => {
+      if (!rootRef.current?.contains(event.target)) setOpen(false)
+    }
     window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
+    window.addEventListener('pointerdown', onPointer)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      window.removeEventListener('pointerdown', onPointer)
+    }
   }, [open])
 
   return (
-    <div className="write">
+    <div className="write" ref={rootRef}>
       <button
         type="button"
         className="nav-cta"
