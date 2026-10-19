@@ -329,7 +329,6 @@ const copy = {
     webLead: 'Нить соединяет навыки, которые работают в одной задаче. Наведите на узел, чтобы увидеть его связи.',
     closeTitle: 'Связаться со мной',
     closeLead: 'Москва. Открыт к релокации и удалённой работе.',
-    footer: 'Дмитрий Волокитин, октябрь 2026',
     title: 'Дмитрий Волокитин, системный архитектор',
   },
   en: {
@@ -609,7 +608,6 @@ const copy = {
     webLead: 'A thread joins skills that work on the same job. Hover a node to see its links.',
     closeTitle: 'Contact me',
     closeLead: 'Moscow. Open to relocation and remote work.',
-    footer: 'Dmitrii Volokitin, October 2026',
     title: 'Dmitrii Volokitin, systems architect',
   },
 }
@@ -972,7 +970,6 @@ function Page({ text, lang }) {
           </div>
         </section>
       </main>
-      <footer className="note">{text.footer}</footer>
     </>
   )
 }

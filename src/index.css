@@ -632,14 +632,6 @@ h2.display {
   margin-top: 1.4rem;
 }
 
-footer.note {
-  padding: 1.1rem 1.25rem 1.6rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-  background: var(--cream);
-  border-top: 1px solid var(--line);
-}
-
 @media (max-width: 980px) {
   .hero { min-height: auto; padding-top: 5.6rem; }
   .hero-grid { grid-template-columns: 1fr; }
