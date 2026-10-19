@@ -112,7 +112,7 @@ const copy = {
       {
         id: 'engineer',
         index: '03',
-        kicker: 'июнь 2022 - ноябрь 2025',
+        kicker: '2020 - ноябрь 2025',
         title: 'Системный и knowledge-инженер',
         span: 'Time & Space',
         summary: 'Онтология OSA, Атлас, преподавание MBSE, сайт и CI/CD.',
@@ -391,7 +391,7 @@ const copy = {
       {
         id: 'engineer',
         index: '03',
-        kicker: 'June 2022 - November 2025',
+        kicker: '2020 - November 2025',
         title: 'Systems and knowledge engineer',
         span: 'Time & Space',
         summary: 'OSA ontology, Atlas, MBSE teaching, the company site, and CI/CD.',
