@@ -134,10 +134,9 @@ const copy = {
         index: '01',
         kicker: 'с 2022',
         title: 'OSA',
-        summary: 'Онтологическая платформа автоматизации. Реестр российского ПО №7147.',
+        summary: 'LCNC-платформа разработки решений. Реестр российского ПО №7147.',
         body: [
           'Предприятие описывает предметную область единой моделью. Занимаюсь семантической структурой данных, интеграцией графа знаний и архитектурой поставки.',
-          'Монорепозиторий сервисов: Node.js и Express, PostgreSQL, Vue, фоновые воркеры, Docker. Метамодель хранится отдельно от экземпляров, нотацию можно менять в модели.',
         ],
         chips: ['RDF / OWL', 'граф знаний', 'Node.js', 'Vue', 'PostgreSQL', 'Docker'],
       },
@@ -413,10 +412,9 @@ const copy = {
         index: '01',
         kicker: 'since 2022',
         title: 'OSA',
-        summary: 'Ontology platform for automation. Listed in the Russian software registry, no. 7147.',
+        summary: 'An LCNC platform for building solutions. Listed in the Russian software registry, no. 7147.',
         body: [
           'A company describes its domain as one model. I work on the semantic data structure, knowledge-graph integration, and delivery architecture.',
-          'A monorepo of services: Node.js and Express, PostgreSQL, Vue, background workers, Docker. The metamodel is stored apart from the instances, so the notation can change inside the model.',
         ],
         chips: ['RDF / OWL', 'knowledge graph', 'Node.js', 'Vue', 'PostgreSQL', 'Docker'],
       },
