@@ -531,7 +531,7 @@ h2.display {
 
 .web-stage {
   position: relative;
-  height: 680px;
+  height: 760px;
   margin-top: 0.4rem;
 }
 
@@ -662,7 +662,7 @@ footer.note {
   .tile-panel-inner { padding-left: 1.15rem; }
   .close { min-height: auto; }
   .close .giant { font-size: 42vw; }
-  .web-stage { height: 860px; }
+  .web-stage { height: 920px; }
   .web-node { font-size: 0.72rem; max-width: 8.2rem; padding: 0.35rem 0.6rem; }
 }
 
