@@ -135,7 +135,7 @@ const copy = {
           'Онбордил новых аналитиков и ревьюил их спецификации и модели.',
           'Занимался MVP графа знаний «Атлас образования» для методологов.',
           'Преподаю MBSE и онтологическое моделирование разным организациям. Обучил больше 100 человек, в том числе студентов старших курсов ведущих вузов РФ.',
-          'Занимался корпоративным сайтом tas-project.ru на React, Strapi и Node.js. Дизайн сайта тоже мой. Strapi поднял и поддерживал.',
+          'Занимался корпоративным сайтом Time & Space на React, Strapi и Node.js. Дизайн сайта тоже мой. Strapi поднял и поддерживал.',
           'Поднял CI/CD на GitLab CI и приватных раннерах.',
         ],
       },
@@ -153,7 +153,6 @@ const copy = {
         body: [
           'Реестр графов знаний, просмотр графа и онтологии, LLM-модули импакт-анализа и поддержки решений. Модель отвечает только по триплетам графа, а изменения графа, которые она предлагает, проходят проверку на сервере.',
           'Спроектировал архитектуру и написал большую часть кода. Подключается серверная модель, своя модель пользователя через OpenAI-совместимый API или оффлайн-режим. Дизайн тоже мой.',
-          'Демо: https://ontographhub.demo.tas-project.ru',
         ],
         chips: ['GraphRAG', 'LLM', 'TypeScript', 'Express', 'React', 'Docker'],
       },
@@ -189,7 +188,7 @@ const copy = {
         body: [
           'Вместе с ведущими вузами РФ подготовили программы цифровых навыков по модельно-ориентированной системной, программной и онтологической инженерии.',
           'Три продукта на OSA: методические основы MBSE, методические основы программной инженерии по SWEBOK V4, менеджмент риска кибербезопасности. В учебном году 2025/2026 вёл занятия у студентов старших курсов.',
-          'Публикация: https://tas-project.ru/publications/tas-msu',
+          'Публикация на сайте Time & Space.',
         ],
         chips: ['MBSE', 'OSA', 'онтологии', 'вузы РФ'],
       },
@@ -222,7 +221,7 @@ const copy = {
         index: '07',
         kicker: 'с 2022',
         title: 'Сайт и контур поставки',
-        summary: 'tas-project.ru: дизайн, ведение и GitLab CI.',
+        summary: 'Сайт Time & Space: дизайн, ведение и GitLab CI.',
         body: [
           'Корпоративный сайт на Next.js и Strapi, двуязычный. Дизайн и ведение сайта мои: композиция, типографика, сетка, тексты. В 2026 пересобрал главную вокруг одной мысли: единый источник истины для всех доменов, с живой демонстрацией того, как модель связывает записи разных систем.',
           'CI/CD на GitLab CI с приватными раннерами. Сборка и выкладка одинаковые у разработчиков и на серверах.',
@@ -437,7 +436,7 @@ const copy = {
           'Onboarded new analysts and reviewed their specifications and models.',
           'Worked on the Education Atlas knowledge-graph MVP for instructional designers.',
           'I teach MBSE and ontology modeling for different organizations. More than 100 people, including senior students at leading Russian universities.',
-          'Worked on the company site tas-project.ru on React, Strapi, and Node.js. I designed it, and I set up and maintained Strapi.',
+          'Worked on the Time & Space company site on React, Strapi, and Node.js. I designed it, and I set up and maintained Strapi.',
           'Set up CI/CD on GitLab CI with private runners.',
         ],
       },
@@ -455,7 +454,6 @@ const copy = {
         body: [
           'A registry of knowledge graphs, a graph and ontology viewer, and LLM modules for impact analysis and decision support. The model answers only from the graph triples, and the graph changes it suggests are checked on the server.',
           'I designed the architecture and wrote most of the code. It runs on a server model, the user\'s own model over an OpenAI-compatible API, or offline. I designed the UI too.',
-          'Demo: https://ontographhub.demo.tas-project.ru',
         ],
         chips: ['GraphRAG', 'LLM', 'TypeScript', 'Express', 'React', 'Docker'],
       },
@@ -491,7 +489,7 @@ const copy = {
         body: [
           'With leading Russian universities we prepared digital-skill programs in model-based systems, software, and ontology engineering.',
           'Three products on OSA: methodological foundations of MBSE, methodological foundations of software engineering from SWEBOK V4, and cybersecurity risk management. In the 2025/2026 academic year I taught senior students.',
-          'Publication: https://tas-project.ru/publications/tas-msu',
+          'Publication on the Time & Space site.',
         ],
         chips: ['MBSE', 'OSA', 'ontologies', 'Russian universities'],
       },
@@ -524,7 +522,7 @@ const copy = {
         index: '07',
         kicker: 'since 2022',
         title: 'Company site and delivery',
-        summary: 'tas-project.ru: design, upkeep, and GitLab CI.',
+        summary: 'The Time & Space site: design, upkeep, and GitLab CI.',
         body: [
           'The bilingual company site on Next.js and Strapi. I design and run it: layout, type, grid, and copy. In 2026 I rebuilt the home page around one idea, one source of truth across domains, with a live demo of the model linking records from different systems.',
           'CI/CD on GitLab CI with private runners. The build and the release are the same for developers and for the servers.',
