@@ -62,7 +62,6 @@ const copy = {
     eyebrowSub: 'Ontologies · Domain Models · Probabilistic Reasoning',
     name: ['Дмитрий', 'Волокитин'],
     lede: 'Семь лет описываю предметные области формально: онтологии, математические и вероятностные модели, на которых держатся данные, сервисы и решения предприятия.',
-    cta: 'Смотреть проекты',
     alt: 'Дмитрий Волокитин',
     factsLabel: 'Коротко',
     facts: [
@@ -363,7 +362,6 @@ const copy = {
     eyebrowSub: 'Ontologies · Domain Models · Probabilistic Reasoning',
     name: ['Dmitrii', 'Volokitin'],
     lede: 'For seven years I have been describing domains formally: ontologies, mathematical and probabilistic models that an enterprise\'s data, services, and decisions rest on.',
-    cta: 'See the projects',
     alt: 'Dmitrii Volokitin',
     factsLabel: 'In short',
     facts: [
@@ -862,7 +860,6 @@ function Page({ text, lang }) {
               </h1>
               <div className="hero-foot">
                 <p>{text.lede}</p>
-                <a className="cta" href="#projects">{text.cta}</a>
               </div>
             </div>
             <img className="portrait" src="/portrait.jpg" alt={text.alt} />
