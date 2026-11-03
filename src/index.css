@@ -734,6 +734,8 @@ h2.display {
     letter-spacing: 0.08em;
   }
   .eyebrow-plate {
+    width: auto;
+    max-width: 100%;
     padding: 0;
     background: none;
     border: 0;
