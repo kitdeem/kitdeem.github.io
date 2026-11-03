@@ -804,3 +804,21 @@ h2.display {
   html { scroll-behavior: auto; }
   .thread { animation: none; opacity: 1; }
 }
+
+@media (min-width: 981px) {
+  .hero {
+    height: max(100svh, 560px);
+    min-height: 0;
+    padding-top: clamp(4.4rem, 11svh, 6.2rem);
+    padding-bottom: clamp(1.2rem, 4svh, 2.6rem);
+  }
+  .eyebrow { margin-bottom: clamp(0.6rem, 2.4svh, 1.5rem); }
+  .eyebrow b { font-size: min(clamp(2.6rem, 4.8vw, 4.5rem), 7.2svh); }
+  .eyebrow-plate { padding-block: clamp(0.5rem, 1.6svh, 0.95rem) clamp(0.55rem, 1.8svh, 1.05rem); }
+  .hero h1 { font-size: min(clamp(3.2rem, 9vw, 8.2rem), 12.5svh); }
+  .portrait {
+    width: auto;
+    height: min(453px, 48svh);
+    max-width: 100%;
+  }
+}
